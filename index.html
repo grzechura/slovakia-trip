@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Adventure Slovakia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef6ff;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg,#0f172a,#2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 52px;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 22px;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      font-weight: bold;
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .easy { background:#dcfce7; color:#166534; }
+    .medium { background:#fef3c7; color:#92400e; }
+    .hard { background:#fee2e2; color:#991b1b; }
+
+    .info {
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 260px;
+      border: none;
+      border-radius: 18px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .timeline {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    .timeline div {
+      min-width: 180px;
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .mission {
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .weather {
+      background: linear-gradient(135deg,#dbeafe,#e0f2fe);
+      padding: 18px;
+      border-radius: 18px;
+      margin-top: 14px;
+    }
+
+    footer {
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🏔️ Family Adventure Slovakia</h1>
+  <p>Rodzinna wyprawa przez najpiękniejsze miejsca Słowacji 🚗</p>
+
+  <div class="timeline">
+    <div>🚗 Zachód</div>
+    <div>⛰️ Liptów</div>
+    <div>🌲 Słowacki Raj</div>
+    <div>🏊 Regeneracja</div>
+    <div>🏡 Powrót</div>
+  </div>
+</header>
+
+<div class="container">
+
+<section class="card">
+  <h2>✨ Co zostało poprawione?</h2>
+
+  <div class="grid grid-3">
+    <div class="info">
+      <h3>🧘 Więcej regeneracji</h3>
+      <p>
+        Dodano spokojniejsze półdni i baseny termalne.
+      </p>
+    </div>
+
+    <div class="info">
+      <h3>🚗 Lepsza logistyka</h3>
+      <p>
+        Ograniczono przepakowywanie i niepotrzebne przejazdy.
+      </p>
+    </div>
+
+    <div class="info">
+      <h3>🌧️ Plan B</h3>
+      <p>
+        Każda baza ma teraz wariant na deszcz.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge easy">🟢 Lekki dzień</span>
+  <h2>🚗 Dzień 1 — Dolni Morava</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>🌉 Sky Bridge 721</h3>
+      <p>
+        Najdłuższy wiszący most pieszy świata.
+      </p>
+
+      <p>
+        To idealny początek wyprawy — ogromny efekt WOW bez dużego wysiłku.
+      </p>
+
+      <ul>
+        <li>🚗 przejazd: ok. 5–6h</li>
+        <li>🥾 spacer: lekki</li>
+        <li>👧 hit dziecięcy: 10/10</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.komoot.com/highlight/1048535/embed"></iframe>
+      <p>
+        Most został otwarty w 2022 roku i zawieszony jest ponad 90 metrów nad doliną.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge medium">🟡 Średnio aktywnie</span>
+  <h2>🌲 Dzień 2 — Janosikowe Diery</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>🥾 Rodzinny trekking</h3>
+
+      <ul>
+        <li>🌊 wodospady</li>
+        <li>🪜 drabinki</li>
+        <li>🌲 mostki i skały</li>
+      </ul>
+
+      <p>
+        Jedno z najbardziej rodzinnych miejsc na Słowacji.
+      </p>
+
+      <p>
+        Dla dzieci wygląda jak naturalny park przygody.
+      </p>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.komoot.com/highlight/640130/embed"></iframe>
+
+      <div class="weather">
+        ☔ Plan B:
+        termy + muzeum Janosika.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge easy">🟢 Spokojniejszy dzień</span>
+  <h2>🚗 Dzień 3 — Sulowskie Skały + przejazd na Liptów</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>🪨 Sulowskie Skały</h3>
+
+      <p>
+        Krótki spacer przez niezwykłe formacje skalne.
+      </p>
+
+      <p>
+        Idealne jako przystanek przejazdowy — bez całodziennego trekkingu.
+      </p>
+
+      <ul>
+        <li>🚗 krótki dojazd</li>
+        <li>🥾 łatwa pętla</li>
+        <li>📸 świetne zdjęcia</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.komoot.com/highlight/196680/embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge easy">🟢 Regeneracja</span>
+  <h2>🏊 Dzień 4 — Tatralandia / Besenova</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>💦 Reset dla dzieci i dorosłych</h3>
+
+      <p>
+        Najważniejsza optymalizacja całego planu.
+      </p>
+
+      <p>
+        Po kilku dniach trekkingów dzieci potrzebują „łatwego wow”.
+      </p>
+
+      <ul>
+        <li>🎢 zjeżdżalnie</li>
+        <li>♨️ termy</li>
+        <li>🌴 strefy relaksu</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.google.com/maps?q=Tatralandia&output=embed"></iframe>
+
+      <div class="weather">
+        🌧️ Idealne również na niepogodę.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge medium">🟡 Elastyczny plan</span>
+  <h2>⛰️ Dzień 5 — Chopok i opcjonalnie Dziumbier</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>🚠 Mniej presji = lepszy dzień</h3>
+
+      <p>
+        Dziumbier nie jest już obowiązkowy.
+      </p>
+
+      <p>
+        Plan zależy od:
+      </p>
+
+      <ul>
+        <li>☀️ pogody</li>
+        <li>😄 energii dzieci</li>
+        <li>🌬️ wiatru</li>
+      </ul>
+
+      <p>
+        Dzięki temu unikacie „przepychania planu”.
+      </p>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.komoot.com/highlight/355762/embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <span class="badge hard">🔴 Największa przygoda</span>
+  <h2>🌲 Sucha Bela — Słowacki Raj</h2>
+
+  <div class="grid grid-2">
+    <div class="info">
+      <h3>🪜 Drabinki i wodospady</h3>
+
+      <p>
+        Jeden z największych hitów całego wyjazdu.
+      </p>
+
+      <ul>
+        <li>🌊 wodospady</li>
+        <li>🪜 pionowe drabinki</li>
+        <li>🌲 wąwóz</li>
+        <li>😄 przygoda jak z filmu</li>
+      </ul>
+
+      <p>
+        To będzie dzień, który dzieci zapamiętają najbardziej.
+      </p>
+    </div>
+
+    <div class="info">
+      <iframe src="https://www.komoot.com/highlight/450747/embed"></iframe>
+
+      <div class="weather">
+        ☔ Plan B:
+        AquaCity Poprad lub jaskinia.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>🎯 Misje dla dzieci</h2>
+
+  <div class="grid grid-3">
+    <div class="mission">🌉 Przejdź najdłuższy most</div>
+    <div class="mission">🪜 Policz drabinki</div>
+    <div class="mission">🌊 Dotknij wodospadu</div>
+    <div class="mission">🪨 Znajdź najdziwniejszy kamień</div>
+    <div class="mission">📸 Zrób zdjęcie chmurom nad Tatrami</div>
+    <div class="mission">🍦 Spróbuj słowackich lodów</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>🎒 Co zabrać?</h2>
+
+  <div class="grid grid-3">
+    <div class="info">
+      <h3>🥾 Trekking</h3>
+      <ul>
+        <li>buty trekkingowe</li>
+        <li>kurtka przeciwdeszczowa</li>
+        <li>powerbank</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h3>🏊 Baseny</h3>
+      <ul>
+        <li>stroje kąpielowe</li>
+        <li>klapki</li>
+        <li>ręczniki</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h3>🚗 Auto</h3>
+      <ul>
+        <li>przekąski</li>
+        <li>audiobooki</li>
+        <li>gry dla dzieci</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>🏔️ Family Adventure Slovakia</h2>
+  <p>
+    mniej chaosu • więcej przygody • szczęśliwe dzieci 😄
+  </p>
+</footer>
+
+</body>
+</html>
