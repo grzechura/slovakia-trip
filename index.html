@@ -1,459 +1,661 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Adventure Slovakia</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Family Adventure Slovakia 2026</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #eef6ff;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg,#0f172a,#2563eb);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 52px;
-      margin-bottom: 16px;
-    }
-
-    header p {
-      font-size: 22px;
-      opacity: 0.95;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 24px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 28px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 24px;
-      margin-bottom: 14px;
-    }
-
-    .grid {
-      display: grid;
-      gap: 20px;
-    }
-
-    .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 999px;
-      margin-bottom: 14px;
-      font-weight: bold;
-      background: #dbeafe;
-      color: #1d4ed8;
-    }
-
-    .easy { background:#dcfce7; color:#166534; }
-    .medium { background:#fef3c7; color:#92400e; }
-    .hard { background:#fee2e2; color:#991b1b; }
-
-    .info {
-      background: #f8fafc;
-      border-radius: 20px;
-      padding: 20px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 260px;
-      border: none;
-      border-radius: 18px;
-      margin-bottom: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-top: 12px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .timeline {
-      display: flex;
-      gap: 12px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-      margin-top: 20px;
-    }
-
-    .timeline div {
-      min-width: 180px;
-      background: white;
-      border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .mission {
-      background: #fff7ed;
-      border: 1px solid #fdba74;
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    .weather {
-      background: linear-gradient(135deg,#dbeafe,#e0f2fe);
-      padding: 18px;
-      border-radius: 18px;
-      margin-top: 14px;
-    }
-
-    footer {
-      background:#0f172a;
-      color:white;
-      text-align:center;
-      padding:40px 20px;
-      margin-top:40px;
-    }
-
-    @media(max-width:768px){
-      header h1 {
-        font-size: 36px;
-      }
-
-      h2 {
-        font-size: 28px;
-      }
-    }
-  </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial,sans-serif;
+  background:#eef6ff;
+  color:#1e293b;
+  line-height:1.6;
+}
+header{
+  background:linear-gradient(135deg,#0f172a,#2563eb);
+  color:white;
+  padding:70px 20px;
+  text-align:center;
+}
+header h1{
+  font-size:54px;
+  margin-bottom:18px;
+}
+header p{
+  font-size:22px;
+  opacity:.95;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:24px;
+}
+.card{
+  background:white;
+  border-radius:28px;
+  padding:28px;
+  margin-bottom:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.grid{
+  display:grid;
+  gap:20px;
+}
+.grid-2{
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+.grid-3{
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+h2{
+  font-size:34px;
+  margin-bottom:18px;
+}
+h3{
+  font-size:24px;
+  margin-bottom:12px;
+}
+.badge{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:999px;
+  font-weight:bold;
+  margin-bottom:14px;
+}
+.easy{background:#dcfce7;color:#166534}
+.medium{background:#fef3c7;color:#92400e}
+.hard{background:#fee2e2;color:#991b1b}
+.info{
+  background:#f8fafc;
+  padding:20px;
+  border-radius:20px;
+}
+ul{
+  padding-left:22px;
+  margin-top:10px;
+}
+li{margin-bottom:8px}
+img{
+  width:100%;
+  border-radius:20px;
+  margin-bottom:16px;
+}
+iframe{
+  width:100%;
+  height:320px;
+  border:none;
+  border-radius:20px;
+  margin-top:16px;
+}
+.timeline{
+  display:flex;
+  gap:14px;
+  overflow:auto;
+  margin-top:28px;
+}
+.timeline div{
+  min-width:200px;
+  background:white;
+  color:#0f172a;
+  border-radius:18px;
+  padding:18px;
+  font-weight:bold;
+}
+.mission{
+  background:#fff7ed;
+  border:1px solid #fdba74;
+  border-radius:16px;
+  padding:14px;
+  font-weight:bold;
+}
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  margin-top:40px;
+}
+@media(max-width:768px){
+header h1{font-size:38px}
+h2{font-size:28px}
+.container{padding:14px}
+}
+.link-btn{
+display:inline-block;
+margin-top:16px;
+padding:10px 18px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:.2s;
+}
+.link-btn:hover{
+background:#1d4ed8;
+transform:translateY(-2px);
+}
+</style>
 </head>
 <body>
 
 <header>
-  <h1>🏔️ Family Adventure Slovakia</h1>
-  <p>Rodzinna wyprawa przez najpiękniejsze miejsca Słowacji 🚗</p>
+<h1>🏔️ Family Adventure Slovakia</h1>
+<p>14-dniowa rodzinna wyprawa ze Szczecina przez najpiękniejsze miejsca Słowacji 🚗</p>
 
-  <div class="timeline">
-    <div>🚗 Zachód</div>
-    <div>⛰️ Liptów</div>
-    <div>🌲 Słowacki Raj</div>
-    <div>🏊 Regeneracja</div>
-    <div>🏡 Powrót</div>
-  </div>
+<div class="timeline">
+<div>🚗 Szczecin → Dolni Morava</div>
+<div>🌲 Mała Fatra</div>
+<div>⛰️ Liptów</div>
+<div>🌊 Tatry i termy</div>
+<div>🌲 Słowacki Raj</div>
+<div>🚴 Dunajec</div>
+<div>🏡 Powrót</div>
+</div>
 </header>
 
 <div class="container">
 
 <section class="card">
-  <h2>✨ Co zostało poprawione?</h2>
+<h2>🗺️ Mapa całej podróży</h2>
+<p>
+Główna trasa została zoptymalizowana tak, aby ograniczyć liczbę długich przejazdów i przepakowywania.
+</p>
 
-  <div class="grid grid-3">
-    <div class="info">
-      <h3>🧘 Więcej regeneracji</h3>
-      <p>
-        Dodano spokojniejsze półdni i baseny termalne.
-      </p>
-    </div>
-
-    <div class="info">
-      <h3>🚗 Lepsza logistyka</h3>
-      <p>
-        Ograniczono przepakowywanie i niepotrzebne przejazdy.
-      </p>
-    </div>
-
-    <div class="info">
-      <h3>🌧️ Plan B</h3>
-      <p>
-        Każda baza ma teraz wariant na deszcz.
-      </p>
-    </div>
-  </div>
+<iframe src="https://maps.google.com/maps?saddr=Szczecin&daddr=Dolni+Morava+to:Terchova+to:Oravsky+Podzamok+to:Liptovsky+Mikulas+to:Poprad+to:Spissky+Hrad+to:Cerveny+Klastor+&hl=pl&output=embed"></iframe>
 </section>
 
 <section class="card">
-  <span class="badge easy">🟢 Lekki dzień</span>
-  <h2>🚗 Dzień 1 — Dolni Morava</h2>
+<h2>💛 Dlaczego ta wyprawa będzie wyjątkowa?</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>🌉 Sky Bridge 721</h3>
-      <p>
-        Najdłuższy wiszący most pieszy świata.
-      </p>
+<div class="grid grid-3">
+<div class="info">
+<h3>🌲 Prawdziwa przygoda</h3>
+<p>
+Nie będzie to zwykły wyjazd „od hotelu do hotelu”.
+</p>
+<p>
+Każdy dzień to nowe miejsce, wodospady, mosty, góry i widoki jak z filmu fantasy.
+</p>
+</div>
 
-      <p>
-        To idealny początek wyprawy — ogromny efekt WOW bez dużego wysiłku.
-      </p>
+<div class="info">
+<h3>📸 Widoki, które chce się pamiętać</h3>
+<p>
+Tatry, drewniane chaty, zamki i góry tworzą klimat idealny na rodzinny roadtrip.
+</p>
+</div>
 
-      <ul>
-        <li>🚗 przejazd: ok. 5–6h</li>
-        <li>🥾 spacer: lekki</li>
-        <li>👧 hit dziecięcy: 10/10</li>
-      </ul>
-    </div>
-
-    <div class="info">
-      <iframe src="https://www.komoot.com/highlight/1048535/embed"></iframe>
-      <p>
-        Most został otwarty w 2022 roku i zawieszony jest ponad 90 metrów nad doliną.
-      </p>
-    </div>
-  </div>
+<div class="info">
+<h3>😄 Atrakcje dla dzieci i dorosłych</h3>
+<p>
+Drabinki, mosty, rowery, termy i kolejki górskie sprawiają, że każdy znajdzie coś swojego.
+</p>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <span class="badge medium">🟡 Średnio aktywnie</span>
-  <h2>🌲 Dzień 2 — Janosikowe Diery</h2>
+<span class="badge easy">🟢 Lekki dzień</span>
+<h2>🚗 Dzień 1 — Szczecin → Dolni Morava</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>🥾 Rodzinny trekking</h3>
+<div class="grid grid-2">
+<div>
+<img src="https://www.aktywniwpodrozy.pl/wp-content/uploads/2023/08/czechy-dolni-morava-07-log.jpg">
 
-      <ul>
-        <li>🌊 wodospady</li>
-        <li>🪜 drabinki</li>
-        <li>🌲 mostki i skały</li>
-      </ul>
+<div class="info">
+<h3>🌉 Sky Bridge 721</h3>
+<p>
+Najdłuższy wiszący most pieszy świata.
+</p>
 
-      <p>
-        Jedno z najbardziej rodzinnych miejsc na Słowacji.
-      </p>
+<ul>
+<li>🚗 przejazd ok. 6h</li>
+<li>😄 ogromny efekt WOW dla dzieci</li>
+<li>📸 świetne miejsce na rodzinne zdjęcia</li>
+</ul>
 
-      <p>
-        Dla dzieci wygląda jak naturalny park przygody.
-      </p>
-    </div>
+<a href="https://hasajacezajace.com/?s=Dolni+Morava" target="_blank" class="link-btn">Więcej o Dolni Morava ➔</a>
+<a href="https://www.komoot.com/discover/Doln%C3%AD_Morava/@50.1225,16.8007" target="_blank" class="link-btn">Trasy Komoot ➔</a>
+</div>
+</div>
 
-    <div class="info">
-      <iframe src="https://www.komoot.com/highlight/640130/embed"></iframe>
+<div class="info">
+<h3>✨ Dlaczego Asia i Hania pokochają to miejsce?</h3>
+<p>
+Wyobraźcie sobie spacer wysoko nad górami, wśród chmur i ogromnych widoków.
+</p>
 
-      <div class="weather">
-        ☔ Plan B:
-        termy + muzeum Janosika.
-      </div>
-    </div>
-  </div>
+<p>
+Sky Bridge wygląda jak scena z filmu przygodowego — dzieci czują się tam jak odkrywcy, a dorośli mogą po prostu podziwiać panoramę gór.
+</p>
+
+<p>
+To jedno z tych miejsc, gdzie już po kilku minutach wszyscy wyciągają telefony do zdjęć 😄
+</p>
+
+<h3 style="margin-top:18px;">☔ Plan B</h3>
+<p>
+Jeśli pogoda będzie słaba — można ograniczyć spacer i szybciej pojechać do hotelu.
+</p>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <span class="badge easy">🟢 Spokojniejszy dzień</span>
-  <h2>🚗 Dzień 3 — Sulowskie Skały + przejazd na Liptów</h2>
+<span class="badge medium">🟡 Średnio aktywnie</span>
+<h2>🌲 Dni 2–3 — Mała Fatra i Janosikowe Diery</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>🪨 Sulowskie Skały</h3>
+<div class="grid grid-2">
+<div>
+<img src="https://hasajacezajace.com/wp-content/uploads/2020/12/janosikowe-diery-mala-fatra.jpg">
 
-      <p>
-        Krótki spacer przez niezwykłe formacje skalne.
-      </p>
+<div class="info">
+<h3>🪜 Janosikowe Diery</h3>
+<p>
+Jedno z najbardziej rodzinnych miejsc na Słowacji.
+</p>
 
-      <p>
-        Idealne jako przystanek przejazdowy — bez całodziennego trekkingu.
-      </p>
+<ul>
+<li>🌊 wodospady</li>
+<li>🪜 drabinki</li>
+<li>🌲 mostki</li>
+<li>😄 klimat przygodowego parku</li>
+</ul>
 
-      <ul>
-        <li>🚗 krótki dojazd</li>
-        <li>🥾 łatwa pętla</li>
-        <li>📸 świetne zdjęcia</li>
-      </ul>
-    </div>
+<a href="https://hasajacezajace.com/?s=Janosikowe+Diery" target="_blank" class="link-btn">Szukaj wpisu o Dierach ➔</a>
+<a href="https://www.komoot.com/discover/J%C3%A1no%C5%A1%C3%ADkove_diery/@49.2454,19.0383" target="_blank" class="link-btn">Trasy Komoot ➔</a>
+</div>
+</div>
 
-    <div class="info">
-      <iframe src="https://www.komoot.com/highlight/196680/embed"></iframe>
-    </div>
-  </div>
+<div class="info">
+<h3>📍 Lokalizacja</h3>
+<p>
+Park Narodowy Mała Fatra, okolice miejscowości Terchová.
+</p>
+
+<h3 style="margin-top:18px;">✨ Dlaczego warto?</h3>
+<p>
+To miejsce wygląda jak naturalny plac zabaw w środku gór.
+</p>
+
+<p>
+Przechodzi się po mostkach i drabinkach nad potokami oraz wodospadami.
+</p>
+
+<p>
+Dzieci praktycznie cały czas mają tu coś do odkrywania.
+</p>
+
+<h3 style="margin-top:18px;">🪨 Sulowskie Skały</h3>
+<p>
+Drugiego dnia warto pojechać do Sulowskich Skał — niezwykłego skalnego miasta pełnego wież, skał i punktów widokowych.
+</p>
+
+<p>
+To bardziej spokojny dzień z pięknymi panoramami i klimatem jak z Narnii.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Sulowskie+Skaly" target="_blank" class="link-btn">Więcej o Sulowskich Skałach ➔</a>
+<a href="https://www.komoot.com/discover/Sulovske_skaly/@49.1661,18.5776" target="_blank" class="link-btn">Trasy Komoot ➔</a>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <span class="badge easy">🟢 Regeneracja</span>
-  <h2>🏊 Dzień 4 — Tatralandia / Besenova</h2>
+<span class="badge easy">🟢 Dzień regeneracyjny</span>
+<h2>🏊 Dzień 4 — Tatralandia / Besenova</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>💦 Reset dla dzieci i dorosłych</h3>
+<div class="grid grid-2">
+<div>
+<img src="https://hasajacezajace.com/wp-content/uploads/2020/09/DSC04450.jpg">
 
-      <p>
-        Najważniejsza optymalizacja całego planu.
-      </p>
+<div class="info">
+<h3>💦 Dlaczego to ważne?</h3>
+<p>
+Po kilku dniach trekkingów dzieci potrzebują „łatwego wow”.
+</p>
 
-      <p>
-        Po kilku dniach trekkingów dzieci potrzebują „łatwego wow”.
-      </p>
+<ul>
+<li>♨️ termy</li>
+<li>🎢 zjeżdżalnie</li>
+<li>🌴 relaks dla dorosłych</li>
+</ul>
 
-      <ul>
-        <li>🎢 zjeżdżalnie</li>
-        <li>♨️ termy</li>
-        <li>🌴 strefy relaksu</li>
-      </ul>
-    </div>
+<a href="https://hasajacezajace.com/?s=Tatralandia" target="_blank" class="link-btn">Zobacz wpis o Tatralandii ➔</a>
+<a href="https://www.komoot.com/discover/Liptovsky_Mikulas/@49.0806,19.6222" target="_blank" class="link-btn">Okolice w Komoot ➔</a>
+</div>
+</div>
 
-    <div class="info">
-      <iframe src="https://www.google.com/maps?q=Tatralandia&output=embed"></iframe>
+<div class="info">
+<h3>🌴 Dlaczego warto?</h3>
+<p>
+Po górskich przygodach taki dzień działa jak wakacje w wakacjach 😄
+</p>
 
-      <div class="weather">
-        🌧️ Idealne również na niepogodę.
-      </div>
-    </div>
-  </div>
+<p>
+Dzieci mają zjeżdżalnie i fale, a dorośli mogą odpocząć w termach z widokiem na góry.
+</p>
+
+<p>
+To idealny dzień na złapanie oddechu i odzyskanie energii przed kolejnymi przygodami.
+</p>
+
+<iframe src="https://www.google.com/maps?q=Tatralandia&output=embed"></iframe>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <span class="badge medium">🟡 Elastyczny plan</span>
-  <h2>⛰️ Dzień 5 — Chopok i opcjonalnie Dziumbier</h2>
+<span class="badge medium">🟡 Elastyczny plan</span>
+<h2>⛰️ Dni 5–6 — Chopok, Tatry Niżne i okolice Liptowa</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>🚠 Mniej presji = lepszy dzień</h3>
+<div class="grid grid-2">
+<div>
+<img src="https://hasajacezajace.com/wp-content/uploads/2018/09/Zamek-Orawski-1.jpg">
 
-      <p>
-        Dziumbier nie jest już obowiązkowy.
-      </p>
+<div class="info">
+<h3>🏰 Zamek Orawski</h3>
+<p>
+Jeden z najbardziej bajkowych zamków Europy Środkowej.
+</p>
 
-      <p>
-        Plan zależy od:
-      </p>
+<ul>
+<li>🏔️ zbudowany wysoko nad rzeką</li>
+<li>🧛 kręcono tu filmy o Drakuli</li>
+<li>📸 genialne widoki</li>
+</ul>
 
-      <ul>
-        <li>☀️ pogody</li>
-        <li>😄 energii dzieci</li>
-        <li>🌬️ wiatru</li>
-      </ul>
+<a href="https://hasajacezajace.com/?s=Zamek+Orawski" target="_blank" class="link-btn">Więcej o Zamku Orawskim ➔</a>
+<a href="https://www.komoot.com/discover/Oravsky_Hrad/@49.2608,19.3569" target="_blank" class="link-btn">Spacer Komoot ➔</a>
+</div>
+</div>
 
-      <p>
-        Dzięki temu unikacie „przepychania planu”.
-      </p>
-    </div>
+<div class="info">
+<h3>📍 Lokalizacja</h3>
+<p>
+Region Orawy i Liptowa — północna Słowacja.
+</p>
 
-    <div class="info">
-      <iframe src="https://www.komoot.com/highlight/355762/embed"></iframe>
-    </div>
-  </div>
+<h3 style="margin-top:18px;">🚠 Chopok</h3>
+<p>
+Kolejka wywozi Was wysoko ponad doliny i lasy Tatr Niżnych.
+</p>
+
+<p>
+Na górze czekają panoramy, które wyglądają jak widokówki.
+</p>
+
+<p>
+To świetny sposób, żeby poczuć wysokie góry bez wielogodzinnego trekkingu.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Chopok" target="_blank" class="link-btn">Przeczytaj o Chopoku ➔</a>
+<a href="https://www.komoot.com/discover/Chopok/@48.9434,19.5886" target="_blank" class="link-btn">Szlaki Komoot ➔</a>
+
+<h3 style="margin-top:18px;">🏊 Wieczory w termach</h3>
+<p>
+Po górskich dniach można zakończyć dzień w Tatralandii lub Besenovej.
+</p>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <span class="badge hard">🔴 Największa przygoda</span>
-  <h2>🌲 Sucha Bela — Słowacki Raj</h2>
+<span class="badge hard">🔴 Największa przygoda</span>
+<h2>🌲 Dni 7–9 — Słowacki Raj</h2>
 
-  <div class="grid grid-2">
-    <div class="info">
-      <h3>🪜 Drabinki i wodospady</h3>
+<div class="grid grid-2">
+<div>
+<img src="https://hasajacezajace.com/wp-content/uploads/2018/04/Sucha-Bela-2-4.jpg">
 
-      <p>
-        Jeden z największych hitów całego wyjazdu.
-      </p>
+<div class="info">
+<h3>🪜 Sucha Bela</h3>
+<p>
+Najbardziej kultowy szlak całego Słowackiego Raju.
+</p>
 
-      <ul>
-        <li>🌊 wodospady</li>
-        <li>🪜 pionowe drabinki</li>
-        <li>🌲 wąwóz</li>
-        <li>😄 przygoda jak z filmu</li>
-      </ul>
+<ul>
+<li>🌊 wodospady</li>
+<li>🪜 pionowe drabinki</li>
+<li>🌲 drewniane pomosty</li>
+<li>😄 klimat przygodowego filmu</li>
+</ul>
 
-      <p>
-        To będzie dzień, który dzieci zapamiętają najbardziej.
-      </p>
-    </div>
+<a href="https://hasajacezajace.com/?s=Sucha+Bela" target="_blank" class="link-btn">Przeczytaj o Suchej Beli ➔</a>
+<a href="https://www.komoot.com/discover/Sucha_Bela/@48.9425,20.3891" target="_blank" class="link-btn">Trasa Komoot ➔</a>
+</div>
+</div>
 
-    <div class="info">
-      <iframe src="https://www.komoot.com/highlight/450747/embed"></iframe>
+<div class="info">
+<h3>📍 Lokalizacja</h3>
+<p>
+Park Narodowy Slovenský Raj, okolice Hrabušic i Podlesoka.
+</p>
 
-      <div class="weather">
-        ☔ Plan B:
-        AquaCity Poprad lub jaskinia.
-      </div>
-    </div>
-  </div>
+<h3 style="margin-top:18px;">🌲 Velky Kysel</h3>
+<p>
+Jeszcze bardziej dziki i widowiskowy wąwóz z metalowymi pomostami nad wodą.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Velky+Kysel" target="_blank" class="link-btn">Więcej o Velky Kysel ➔</a>
+<a href="https://www.komoot.com/discover/Ve%C4%BEk%C3%BD_Kysel/@48.9394,20.4115" target="_blank" class="link-btn">Trasa Komoot ➔</a>
+
+<h3 style="margin-top:18px;">🪨 Tomašovský výhľad</h3>
+<p>
+Jeden z najbardziej znanych punktów widokowych na Słowacji.
+</p>
+
+<p>
+Ogromna skalna platforma zawieszona nad doliną wygląda spektakularnie na zdjęciach.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Tomasovsky+Vyhlad" target="_blank" class="link-btn">Zobacz punkt widokowy ➔</a>
+<a href="https://www.komoot.com/discover/Tom%C3%A1%C5%A1ovsk%C3%BD_v%C3%BDh%C4%BEad/@48.9158,20.3525" target="_blank" class="link-btn">Szlak Komoot ➔</a>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <h2>🎯 Misje dla dzieci</h2>
+<span class="badge easy">🟢 Rodzinny reset</span>
+<h2>🚴 Dni 10–12 — Pieniny, Bachledka i Spisz</h2>
 
-  <div class="grid grid-3">
-    <div class="mission">🌉 Przejdź najdłuższy most</div>
-    <div class="mission">🪜 Policz drabinki</div>
-    <div class="mission">🌊 Dotknij wodospadu</div>
-    <div class="mission">🪨 Znajdź najdziwniejszy kamień</div>
-    <div class="mission">📸 Zrób zdjęcie chmurom nad Tatrami</div>
-    <div class="mission">🍦 Spróbuj słowackich lodów</div>
-  </div>
+<div class="grid grid-2">
+<div>
+<img src="https://hasajacezajace.com/wp-content/uploads/2018/10/Czerwony-Klasztor-3.jpg">
+
+<div class="info">
+<h3>🚴 Droga Pienińska</h3>
+<p>
+Jedna z najpiękniejszych rodzinnych tras rowerowych Europy Środkowej.
+</p>
+
+<ul>
+<li>🌊 Dunajec obok ścieżki</li>
+<li>🚴 praktycznie płasko</li>
+<li>📸 piękne widoki przez cały dzień</li>
+</ul>
+
+<a href="https://hasajacezajace.com/?s=Czerwony+Klasztor" target="_blank" class="link-btn">Droga Pienińska ➔</a>
+<a href="https://www.komoot.com/discover/Cerveny_Klastor/@49.3988,20.4068" target="_blank" class="link-btn">Rowerowa trasa Komoot ➔</a>
+</div>
+</div>
+
+<div class="info">
+<h3>🌲 Bachledka</h3>
+<p>
+Spacer w koronach drzew z ogromną wieżą widokową.
+</p>
+
+<p>
+To miejsce daje efekt „wow” praktycznie każdemu dziecku.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Bachledka" target="_blank" class="link-btn">Więcej o Bachledce ➔</a>
+<a href="https://www.komoot.com/discover/Bachledka/@49.2716,20.3062" target="_blank" class="link-btn">Trasy Komoot ➔</a>
+
+<h3 style="margin-top:18px;">🏰 Zamek Spiski i Lewocza</h3>
+<p>
+Olbrzymie ruiny zamku górujące nad okolicą robią niesamowite wrażenie.
+</p>
+
+<p>
+Lewocza to z kolei piękne stare miasteczko idealne na spokojny wieczór i lody.
+</p>
+
+<a href="https://hasajacezajace.com/?s=Spisski+Hrad" target="_blank" class="link-btn">Zamek Spiski ➔</a>
+<a href="https://www.komoot.com/discover/Spissky_Hrad/@49.0007,20.7695" target="_blank" class="link-btn">Spacer Komoot ➔</a>
+</div>
+</div>
 </section>
 
 <section class="card">
-  <h2>🎒 Co zabrać?</h2>
+<h2>📅 Pełny oryginalny układ 14 dni</h2>
 
-  <div class="grid grid-3">
-    <div class="info">
-      <h3>🥾 Trekking</h3>
-      <ul>
-        <li>buty trekkingowe</li>
-        <li>kurtka przeciwdeszczowa</li>
-        <li>powerbank</li>
-      </ul>
-    </div>
+<div class="grid grid-3">
+<div class="info">
+<h3>🚗 Dzień 1</h3>
+<p>Przejazd ze Szczecina do Dolni Morava</p>
+<a href="https://hasajacezajace.com/?s=Dolni+Morava" target="_blank" class="link-btn">Zobacz Dolni Morava ➔</a>
+</div>
 
-    <div class="info">
-      <h3>🏊 Baseny</h3>
-      <ul>
-        <li>stroje kąpielowe</li>
-        <li>klapki</li>
-        <li>ręczniki</li>
-      </ul>
-    </div>
+<div class="info">
+<h3>🌉 Dzień 2</h3>
+<p>Sky Bridge 721 + Ścieżka w Chmurach</p>
+<a href="https://hasajacezajace.com/?s=Dolni+Morava" target="_blank" class="link-btn">Sky Bridge i Sky Walk ➔</a>
+</div>
 
-    <div class="info">
-      <h3>🚗 Auto</h3>
-      <ul>
-        <li>przekąski</li>
-        <li>audiobooki</li>
-        <li>gry dla dzieci</li>
-      </ul>
-    </div>
-  </div>
+<div class="info">
+<h3>🪨 Dzień 3</h3>
+<p>Sulowskie Skały</p>
+<a href="https://hasajacezajace.com/?s=Sulowskie+Skaly" target="_blank" class="link-btn">Sulowskie Skały ➔</a>
+</div>
+
+<div class="info">
+<h3>🌲 Dzień 4</h3>
+<p>Janosikowe Diery</p>
+<a href="https://hasajacezajace.com/?s=Janosikowe+Diery" target="_blank" class="link-btn">Janosikowe Diery ➔</a>
+</div>
+
+<div class="info">
+<h3>🏰 Dzień 5</h3>
+<p>Zamek Orawski</p>
+<a href="https://hasajacezajace.com/?s=Zamek+Orawski" target="_blank" class="link-btn">Zamek Orawski ➔</a>
+</div>
+
+<div class="info">
+<h3>⛰️ Dzień 6</h3>
+<p>Chopok i Tatry Niżne</p>
+<a href="https://hasajacezajace.com/?s=Chopok" target="_blank" class="link-btn">Chopok ➔</a>
+</div>
+
+<div class="info">
+<h3>🏊 Dzień 7</h3>
+<p>Tatralandia / regeneracja</p>
+<a href="https://hasajacezajace.com/?s=Tatralandia" target="_blank" class="link-btn">Tatralandia ➔</a>
+</div>
+
+<div class="info">
+<h3>🌲 Dzień 8</h3>
+<p>Velky Kysel</p>
+<a href="https://hasajacezajace.com/?s=Velky+Kysel" target="_blank" class="link-btn">Velky Kysel ➔</a>
+</div>
+
+<div class="info">
+<h3>🌊 Dzień 9</h3>
+<p>Sucha Bela</p>
+<a href="https://hasajacezajace.com/?s=Sucha+Bela" target="_blank" class="link-btn">Sucha Bela ➔</a>
+</div>
+
+<div class="info">
+<h3>🪨 Dzień 10</h3>
+<p>Tomašovský výhľad</p>
+<a href="https://hasajacezajace.com/?s=Tomasovsky+Vyhlad" target="_blank" class="link-btn">Tomašovský výhľad ➔</a>
+</div>
+
+<div class="info">
+<h3>🏰 Dzień 11</h3>
+<p>Zamek Spiski i Lewocza</p>
+<a href="https://hasajacezajace.com/?s=Spisski+Hrad" target="_blank" class="link-btn">Zamek Spiski ➔</a>
+</div>
+
+<div class="info">
+<h3>🌲 Dzień 12</h3>
+<p>Bachledka i spacer w koronach drzew</p>
+<a href="https://hasajacezajace.com/?s=Bachledka" target="_blank" class="link-btn">Bachledka ➔</a>
+</div>
+
+<div class="info">
+<h3>🚴 Dzień 13</h3>
+<p>Droga Pienińska i Czerwony Klasztor</p>
+<a href="https://hasajacezajace.com/?s=Czerwony+Klasztor" target="_blank" class="link-btn">Droga Pienińska ➔</a>
+</div>
+
+<div class="info">
+<h3>🏔️ Dzień 14</h3>
+<p>Biała Woda + powrót</p>
+<a href="https://hasajacezajace.com/?s=Biala+Woda" target="_blank" class="link-btn">Biała Woda ➔</a>
+<a href="https://www.komoot.com/discover/Biela_Voda/@49.2387,20.2417" target="_blank" class="link-btn">Trasy Komoot ➔</a>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>🎯 Misje dla dzieci</h2>
+
+<div class="grid grid-3">
+<div class="mission">🌉 Przejdź najdłuższy most</div>
+<div class="mission">🪜 Policz drabinki</div>
+<div class="mission">🌊 Dotknij wodospadu</div>
+<div class="mission">📸 Zrób zdjęcie chmurom nad Tatrami</div>
+<div class="mission">🪨 Znajdź najdziwniejszy kamień</div>
+<div class="mission">🍦 Spróbuj słowackich lodów</div>
+</div>
+</section>
+
+<section class="card">
+<h2>🎒 Co warto zabrać?</h2>
+
+<div class="grid grid-3">
+<div class="info">
+<h3>🥾 Trekking</h3>
+<ul>
+<li>buty trekkingowe</li>
+<li>kurtka przeciwdeszczowa</li>
+<li>powerbank</li>
+</ul>
+</div>
+
+<div class="info">
+<h3>🏊 Termy</h3>
+<ul>
+<li>stroje kąpielowe</li>
+<li>ręczniki</li>
+<li>klapki</li>
+</ul>
+</div>
+
+<div class="info">
+<h3>🚗 Samochód</h3>
+<ul>
+<li>przekąski</li>
+<li>audiobooki</li>
+<li>gry dla dzieci</li>
+</ul>
+</div>
+</div>
 </section>
 
 <footer>
-  <h2>🏔️ Family Adventure Slovakia</h2>
-  <p>
-    mniej chaosu • więcej przygody • szczęśliwe dzieci 😄
-  </p>
+<h2>🇸🇰 Family Adventure Slovakia</h2>
+<p>
+mniej chaosu • więcej widoków • szczęśliwe dzieci 😄
+</p>
 </footer>
+
+</div>
 
 </body>
 </html>
